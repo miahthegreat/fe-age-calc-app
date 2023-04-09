@@ -13,9 +13,21 @@
 }
 
 body {
-  @apply grid min-h-screen content-center justify-center bg-[#f0f0f0] font-poppins;
+  @apply grid bg-[#f0f0f0] px-4 py-[88px] font-poppins md:min-h-screen md:content-center md:justify-center md:px-0 md:py-0;
+}
+
+.container {
+  @apply flex min-w-full flex-col items-start gap-12 rounded rounded-t-3xl rounded-br-[200px] bg-white px-[24px] py-[48px] md:w-[640px] lg:h-[680px] lg:w-[840px] lg:gap-0 lg:p-[56px]
 }
 
 .form-group {
-  @apply flex items-start gap-[32px];
+  @apply mx-auto flex md:items-center lg:items-start justify-center gap-[16px] md:mx-0 md:justify-normal md:gap-[32px];
+}
+
+.divider {
+  @apply relative mx-auto min-w-full justify-center place-content-center grid lg:flex lg:flex-grow-0 items-center lg:justify-normal
+}
+
+.btn {
+  @apply grid absolute inset-0 mx-auto -translate-y-[50%] lg:-translate-y-0 lg:relative aspect-1 w-[64px] content-center justify-center rounded-full bg-[#854DFF] transition-colors duration-200 ease-in hover:bg-[#151515] lg:w-[96px]
 }
